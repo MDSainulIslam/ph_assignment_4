@@ -19,6 +19,14 @@ return totalAmount;
 
 
 
+function  onlyCharacter( str ) {
+    if(typeof str !== "string"){
+        return "Invalid"
+    }
+    
+    let finalResult = str.replace(/\s+/g, '').toUpperCase();
+    return finalResult;
+}
 
 
 
